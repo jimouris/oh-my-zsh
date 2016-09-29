@@ -118,9 +118,6 @@ alias dirs="find . -maxdepth 1 -type d -print | xargs du -sk | sort -rn"
 # This will keep you sane when you're about to smash the keyboard again.
 alias frak="fortune"
 
-# This is where you put your hand rolled scripts (remember to chmod them)
-PATH="$HOME/bin:$PATH"
-
 # handy short cuts #
 alias h='history'
 alias j='jobs -l'
@@ -186,22 +183,8 @@ fi
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-export PATH=$PATH:/opt/intel/composer_xe_2015.0.090/bin/intel64
-
 # beautify alias
 alias beauty='~/Documents/beautify'
-
-
-# LB - DOOP related environment
-export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
-export DOOP_HOME=/home/jimouris/repos/doop
-export DOOP_PROJECT=doop
-export DOOP_EXTERNALS=/home/jimouris/repos/doop-benchmarks/JREs
-export DOOP_JRE_LIB=/home/jimouris/repos/doop-benchmarks/JREs
-export LB_PAGER_FORCE_START=1
-export LB_MEM_NOWARN=1
-export LOGICBLOX_HOME=/home/jimouris/lb-engines/logicblox-3.10.29/logicblox
-export PATH=${LOGICBLOX_HOME}/bin:${PATH}
 
 alias home='cd ${HOME}'
 alias doop_home="cd ${HOME}/repos/doop"
@@ -224,18 +207,5 @@ elif [[ -s '/usr/share/doc/pkgfile/command-not-found.zsh' ]]; then
 else
   return 1
 fi
-
-# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export PATH="$HOME/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.10.3/bin:$PATH"
-export PATH="/opt/llvm/bin:$PATH"
-export PATH="$PATH:/opt/eclipse_basic/bin/x86_64_linux"
-export CATALINA_HOME="/opt/apache-tomcat-8.0.33"
-
-CLASSPATH=$CLASSPATH:/usr/share/java/mysql.jar
-export CLASSPATH
-
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 alias cowfortune='xcowsay “$(fortune -s)”'
