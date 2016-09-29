@@ -2,13 +2,12 @@
 PATH="$HOME/bin:$PATH"
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 export PATH="$PATH/$JAVA_HOME/bin"
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.10.3/bin:$PATH"
 export PATH="/opt/llvm/bin:$PATH"
 export PATH="$PATH:/opt/eclipse_basic/bin/x86_64_linux"
+export PATH=/usr/bin/node:$PATH
 export CATALINA_HOME="/opt/tomcat/"
-# export CATALINA_HOME="/opt/tomcat/apache-tomcat-8.0.37"
 
 CLASSPATH=$CLASSPATH:/usr/share/java/mysql.jar
 export CLASSPATH
