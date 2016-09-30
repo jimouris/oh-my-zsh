@@ -48,6 +48,7 @@ alias temp='sensors'
 
 alias aliases='subl ~/.oh-my-zsh/custom/aliases.zsh'
 alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 #Extract almost any archive
 extract () {
@@ -191,10 +192,6 @@ alias doop_home="cd ${HOME}/repos/doop"
 alias doop="cd ${HOME}/repos/doop"
 
 alias e="emacs"
-# alias gp="git push"
-# alias gl="git pull"
-# alias gst="git status"
-alias gcm="git checkout master"
 alias top="htop"
 
 # Load command-not-found on Debian-based distributions.

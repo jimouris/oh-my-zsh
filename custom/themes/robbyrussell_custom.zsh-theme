@@ -1,5 +1,5 @@
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$reset_color%} %{$fg_bold[yellow]$(prompt_root_indicator)%} '
+PROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info) %{$fg_bold[yellow]$(prompt_root_indicator)%}%{$reset_color%}'
 
 BRANCH_ICON="\ue0a0"
 ROOT_ICON="\u26A1"
@@ -16,6 +16,6 @@ function git_prompt_info() {
 
 function prompt_root_indicator() {
   if [[ "$UID" -eq 0 ]]; then
-    echo "$ROOT_ICON"
+    echo "$ROOT_ICON "
   fi
 }
