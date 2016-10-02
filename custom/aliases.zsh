@@ -49,6 +49,7 @@ alias temp='sensors'
 alias aliases='subl ~/.oh-my-zsh/custom/aliases.zsh'
 alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gc="git checkout"
 
 #Extract almost any archive
 extract () {
