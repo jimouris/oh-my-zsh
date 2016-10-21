@@ -59,3 +59,9 @@ function prepend-sudo {
 }
 zle -N prepend-sudo
 bindkey -M "emacs" "\C-X\C-S" prepend-sudo
+
+# Get color support for 'less'
+export LESS="--RAW-CONTROL-CHARS"
+
+# Use colors for less, man, etc.
+[[ -f ~/.oh-my-zsh/custom/LESS_TERMCAP ]] && . ~/.oh-my-zsh/custom/LESS_TERMCAP
