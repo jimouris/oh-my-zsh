@@ -33,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,9 +59,3 @@ function prepend-sudo {
 }
 zle -N prepend-sudo
 bindkey -M "emacs" "\C-X\C-S" prepend-sudo
-
-# Get color support for 'less'
-export LESS="--RAW-CONTROL-CHARS"
-
-# Use colors for less, man, etc.
-[[ -f ~/.oh-my-zsh/custom/LESS_TERMCAP ]] && . ~/.oh-my-zsh/custom/LESS_TERMCAP
