@@ -24,3 +24,6 @@ function prompt_indicators() {
     echo "$GEAR_ICON "
   fi
 }
+
+export SROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} %{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
+

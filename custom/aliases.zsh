@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+alias short='PREV=$PS1 ; PS1=$SROMPT'
+alias revert='PS1=$PREV'
+
 # some ls aliases
 alias ll='ls -alh'
 alias la='ls -A'
