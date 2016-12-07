@@ -158,21 +158,6 @@ alias chgrp='chgrp --preserve-root'
 alias sz='source ~/.zshrc'
 alias vz='emacs ~/.zshrc'
 
-if [[ -x =aptitude ]]; then
-    alias attd="sudo xterm -C aptitude"
-else
-    if [[ -x =emerge ]]; then
-        alias emu='sudo emerge -uDN world'
-        alias emup='sudo emerge -uDvpN world'
-        alias esy='sudo emerge --sync'
-        alias ei='sudo emerge'
-        alias eip='sudo emerge -vp '
-        alias packmask='sudo emacsclient /etc/portage/package.unmask'
-        alias packuse='sudo emacsclient /etc/portage/package.use'
-        alias packkey='sudo emacslient /etc/portage/package.keywords'
-    fi
-fi
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
