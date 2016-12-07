@@ -1,6 +1,5 @@
 #!/bin/sh
-local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
+PROMPT='$(prompt_context)%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
 
 BRANCH_ICON="\ue0a0"
 ROOT_ICON="\u26A1"
@@ -23,6 +22,15 @@ function prompt_indicators() {
   if [[ $(jobs -l | wc -l) -gt 0 ]]; then
     echo "$GEAR_ICON "
   fi
+}
+
+# display machine name if in ssh
+function prompt_context() {
+    if [[ -n "$SSH_CLIENT" ]]; then
+        echo "%(?:%{$fg_bold[green]%}{%m}➜ :%{$fg_bold[red]%}{%m}➜ )"
+    else
+        echo "%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+    fi
 }
 
 export SROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} %{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
