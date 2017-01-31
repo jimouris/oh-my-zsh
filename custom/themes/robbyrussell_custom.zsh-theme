@@ -11,8 +11,9 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 
 function git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(parse_git_dirty)$BRANCH_ICON $(current_branch)$ZSH_THEME_GIT_PROMPT_SUFFIX "
+    if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then 
+        echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(parse_git_dirty)$BRANCH_ICON $(current_branch)$ZSH_THEME_GIT_PROMPT_SUFFIX "
+    fi
 }
 
 function prompt_indicators() {
