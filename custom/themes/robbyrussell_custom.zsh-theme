@@ -17,12 +17,12 @@ function git_prompt_info() {
 }
 
 function prompt_indicators() {
-  if [[ "$UID" -eq 0 ]]; then
-    echo "$ROOT_ICON "
-  fi
-  if [[ $(jobs -l | wc -l) -gt 0 ]]; then
-    echo "$GEAR_ICON "
-  fi
+    if [[ "$UID" -eq 0 ]]; then
+        echo "$ROOT_ICON "
+    fi
+    if [[ $(jobs -l | wc -l) -gt 0 ]]; then
+        echo "$GEAR_ICON "
+    fi
 }
 
 # display machine name if in ssh
