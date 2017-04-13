@@ -60,3 +60,4 @@ function prepend-sudo {
 zle -N prepend-sudo
 bindkey -M "emacs" "\C-X\C-S" prepend-sudo
 setopt rm_star_silent
+export PATH="/usr/lib/ccache:$PATH"
