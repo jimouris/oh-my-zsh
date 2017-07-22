@@ -35,8 +35,8 @@ pdf () {
     evince $1 &
 }
 
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
+alias update='sudo apt update'
+alias upgrade='sudo apt upgrade'
 alias bashrc='subl ~/.bashrc'
 alias zshrc='subl ~/.zshrc'
 
