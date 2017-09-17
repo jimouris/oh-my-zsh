@@ -12,8 +12,6 @@ alias lsd="ls -alF | grep /$"
 alias lss='clear; ls -l'
 
 # cd aliases
-alias di='cd ~/Dropbox/di/'
-alias cprogs='cd ~/Dropbox/progs/C/'
 alias back='cd ./..'
 alias ..='cd ./..'
 alias ...='cd ../../'
