@@ -38,6 +38,8 @@ alias upgrade='sudo apt upgrade'
 alias bashrc='subl ~/.bashrc'
 alias zshrc='subl ~/.zshrc'
 
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh.sh"
 
@@ -144,7 +146,7 @@ alias fastping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
 
 # do not delete / or prompt if deleting more than 3 files at a time #
-alias rm='rm -I --preserve-root'
+alias rm='rm -i'
 
 # confirmation #
 alias mv='mv -i'
