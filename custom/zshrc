@@ -1,6 +1,6 @@
 #!/bin/sh
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jimouris/.oh-my-zsh
+export ZSH=/Users/jimouris/.oh-my-zsh
 source $ZSH/custom/aliases.zsh
 source $ZSH/custom/exportedPaths.zsh
 
@@ -61,3 +61,5 @@ zle -N prepend-sudo
 bindkey -M "emacs" "\C-X\C-S" prepend-sudo
 setopt rm_star_silent
 export PATH="/usr/lib/ccache:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
