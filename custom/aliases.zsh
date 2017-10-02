@@ -153,12 +153,6 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 
-# Parenting changing perms on / #
-alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
-
-
 alias sz='source ~/.zshrc'
 alias vz='emacs ~/.zshrc'
 
@@ -177,12 +171,7 @@ fi
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# beautify alias
-alias beauty='~/Documents/beautify'
-
 alias home='cd ${HOME}'
-alias doop_home="cd ${HOME}/repos/doop"
-alias doop="cd ${HOME}/repos/doop"
 
 alias e="emacs"
 alias top="htop"
