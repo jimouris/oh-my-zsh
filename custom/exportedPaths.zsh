@@ -1,7 +1,7 @@
 # This is where you put your hand rolled scripts (remember to chmod them)
 PATH="$HOME/bin:$PATH"
 
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+export JAVA_HOME="`/usr/libexec/java_home -v '1.8*'`"
 export PATH="$PATH/$JAVA_HOME/bin"
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.10.3/bin:$PATH"
 export PATH="/opt/llvm/bin:$PATH"
