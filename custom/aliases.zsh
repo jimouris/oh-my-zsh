@@ -33,24 +33,21 @@ pdf () {
     evince $1 &
 }
 
-alias update='sudo apt update'
-alias upgrade='sudo apt upgrade'
-alias bashrc='subl ~/.bashrc'
-alias zshrc='subl ~/.zshrc'
+alias bashrc='sublime ~/.bashrc'
+alias zshrc='sublime ~/.zshrc'
 
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh.sh"
+alias zshconfig="sublime ~/.zshrc"
+alias ohmyzsh="sublime ~/.oh-my-zsh.sh"
 
-alias n="nautilus . &"
 alias cal='ncal -b'
 alias easter='cal -o'
 
 alias bc='bc -l'
-alias temp='sensors'
+alias temp='istats'
 
-alias aliases='subl ~/.oh-my-zsh/custom/aliases.zsh'
+alias aliases='sublime ~/.oh-my-zsh/custom/aliases.zsh'
 alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gc="git checkout"
@@ -166,10 +163,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 alias home='cd ${HOME}'
 
