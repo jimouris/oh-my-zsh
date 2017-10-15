@@ -9,7 +9,7 @@ alias la='ls -A'
 alias l='ls -CFlh'
 alias woo='fortune'
 alias lsd="ls -alF | grep /$"
-alias lss='clear; ll'
+alias lss='clear; ls -lh'
 
 # cd aliases
 alias back='cd ./..'
