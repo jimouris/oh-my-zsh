@@ -135,6 +135,7 @@ alias nowdate='date +"%d-%m-%Y"'
 
 alias vi=vim
 alias svi='sudo vi'
+alias subl='sublime'
 
 # Stop after sending count ECHO_REQUEST packets #
 alias ping='ping -c 5'
