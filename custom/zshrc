@@ -63,4 +63,5 @@ setopt rm_star_silent
 export PATH="/usr/lib/ccache:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/Library/TeX/Distributions/Programs/texbin"
+export PATH="$PATH:/opt/local/bin"
 
