@@ -64,5 +64,6 @@ export PATH="/usr/lib/ccache:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/Library/TeX/Distributions/Programs/texbin"
 export PATH="$PATH:/opt/local/bin"
-export PATH="/Users/jimouris/aspectj1.8/bin:$PATH"
+export PATH="/opt/aspectj1.8/bin:$PATH"
+export CLASSPATH="/opt/aspectj1.8/lib/aspectjrt.jar:$CLASSPATH"
 
