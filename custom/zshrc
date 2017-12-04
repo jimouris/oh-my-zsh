@@ -62,6 +62,7 @@ bindkey -M "emacs" "\C-X\C-S" prepend-sudo
 setopt rm_star_silent
 export PATH="/usr/lib/ccache:$PATH"
 export PATH="/opt/aspectj1.8/bin:$PATH"
+export PATH="/home/jimouris/.linuxbrew/bin:$PATH"
 export CLASSPATH="/opt/aspectj1.8/lib/aspectjrt.jar:$CLASSPATH"
 
 export NVM_DIR="$HOME/.nvm"
