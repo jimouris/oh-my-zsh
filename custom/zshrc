@@ -67,3 +67,4 @@ export PATH="$PATH:/opt/local/bin"
 export PATH="/opt/aspectj1.8/bin:$PATH"
 export CLASSPATH="/opt/aspectj1.8/lib/aspectjrt.jar:$CLASSPATH"
 
+export PATH="/usr/local/sbin:$PATH"
