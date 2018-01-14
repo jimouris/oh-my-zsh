@@ -78,7 +78,7 @@ extract () {
      fi
 }
 
-alias ccat='source-highlight --out-format=esc -o STDOUT -i'  
+alias ccat='source-highlight --out-format=esc -o STDOUT -i'
 
 pdf () {
 	evince $1 &
@@ -197,3 +197,19 @@ else
 fi
 
 alias cowfortune='xcowsay “$(fortune -s)”'
+
+encAES () {
+    openssl enc -AES256 -in $1 -out $1.encrypted
+}
+
+decAES () {
+    INPUT=$1
+    if [[ $INPUT != *.encrypted ]] ; then
+        echo "File must have .encrypted suffix"
+        return -1
+    else
+        OUTPUT=${INPUT:0:-10}
+        echo $OUTPUT
+    fi
+    openssl enc -AES256 -in $INPUT -out $OUTPUT
+}
