@@ -196,5 +196,5 @@ decAES () {
         OUTPUT=${INPUT:0:-10}
         echo $OUTPUT
     fi
-    openssl enc -AES256 -in $INPUT -out $OUTPUT
+    openssl enc -d -AES256 -in $INPUT -out $OUTPUT
 }
