@@ -4,8 +4,8 @@ export ZSH=/Users/jimouris/.oh-my-zsh
 source $ZSH/custom/aliases.zsh
 source $ZSH/custom/exportedPaths.zsh
 
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="robbyrussell_custom"
+# ZSH_THEME="robbyrussell_custom"
+ZSH_THEME="jimouris"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
