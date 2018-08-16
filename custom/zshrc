@@ -33,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git zsh-syntax-highlighting colored-man-pages)
+plugins=(git zsh-syntax-highlighting colored-man-pages brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,3 +68,12 @@ export PATH="/opt/aspectj1.8/bin:$PATH"
 export CLASSPATH="/opt/aspectj1.8/lib/aspectjrt.jar:$CLASSPATH"
 
 export PATH="/usr/local/sbin:$PATH"
+
+# Welcome message with random cow from selected
+randomsay() {
+  COWS=(default elephant elephant dragon duck moose turtle)
+  idx=$(($RANDOM % 7))
+  # echo "Welcome, jimouris" | cowsay -f ${COWS[$idx]} | lolcat
+  motivate | cowsay -f ${COWS[$idx]} | lolcat
+}
+randomsay
