@@ -71,8 +71,8 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Welcome message with random cow from selected
 randomsay() {
-  COWS=(default elephant elephant dragon duck moose turtle)
-  idx=$(($RANDOM % 7))
+  COWS=(default elephant elephant dragon moose turtle)
+  idx=$(($RANDOM % 6))
   # echo "Welcome, jimouris" | cowsay -f ${COWS[$idx]} | lolcat
   motivate | cowsay -f ${COWS[$idx]} | lolcat
 }
