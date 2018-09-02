@@ -41,6 +41,8 @@ alias zshrc='subl ~/.zshrc'
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh.sh"
 
+alias cat="bat"
+
 alias n="nautilus . &"
 alias cal='ncal -b'
 alias easter='cal -o'
@@ -53,7 +55,6 @@ alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gc="git checkout"
 
-alias betty="~/betty/main.rb"
 eval "$(thefuck --alias)"
 
 #Extract almost any archive
