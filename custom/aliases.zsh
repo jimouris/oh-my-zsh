@@ -38,6 +38,8 @@ alias zshrc='sublime ~/.zshrc'
 
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
+alias cat='bat'
+
 alias zshconfig="sublime ~/.zshrc"
 alias ohmyzsh="sublime ~/.oh-my-zsh.sh"
 
