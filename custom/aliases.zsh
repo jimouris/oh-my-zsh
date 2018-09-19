@@ -169,6 +169,8 @@ fi
 
 alias home='cd ${HOME}'
 
+COWPATH="$COWPATH:$HOME/.cowsay"
+
 alias e="emacs"
 alias top="htop"
 
