@@ -38,3 +38,6 @@ export LD_LIBRARY_PATH="/home/jimouris/repos/Sharemind/build-sdk/prefix/lib/"
 export SHAREMIND_BIN="/home/jimouris/repos/Sharemind/build-sdk/prefix/bin/"
 
 # export PATH=$PATH:/opt/intel/composer_xe_2015.0.090/bin/intel64
+
+. /usr/local/bin/virtualenvwrapper.sh
+
