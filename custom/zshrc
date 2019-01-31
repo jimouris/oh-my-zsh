@@ -71,7 +71,7 @@ randomsay() {
   COWS=(default elephant elephant dragon duck moose turtle)
   idx=$(($RANDOM % 7))
   # echo "Welcome, jimouris" | cowsay -f ${COWS[$idx]} | lolcat
-  motivate | cowsay -f ${COWS[$idx]} | lolcat
+  motivate --no-colors | cowsay -f ${COWS[$idx]} | lolcat
 }
 randomsay
 
