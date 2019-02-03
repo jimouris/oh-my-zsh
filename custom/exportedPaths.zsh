@@ -8,6 +8,7 @@ export PATH="/opt/llvm/bin:$PATH"
 export PATH="$PATH:/opt/eclipse_basic/bin/x86_64_linux"
 export PATH=/usr/bin/node:$PATH
 export CATALINA_HOME="/opt/tomcat/"
+export PATH="/usr/local/sbin:$PATH"
 
 CLASSPATH=$CLASSPATH:/usr/share/java/mysql.jar
 export CLASSPATH
@@ -43,4 +44,5 @@ export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 # export PATH=$PATH:/opt/intel/composer_xe_2015.0.090/bin/intel64
 
 . /usr/local/bin/virtualenvwrapper.sh
+
 
