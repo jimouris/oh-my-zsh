@@ -36,7 +36,7 @@ pdf () {
 alias bashrc='sublime ~/.bashrc'
 alias zshrc='sublime ~/.zshrc'
 
-alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 
 alias cat='bat'
 
@@ -54,7 +54,6 @@ alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gc="git checkout"
 
-alias betty="~/betty/main.rb"
 eval "$(thefuck --alias)"
 
 #Extract almost any archive

@@ -21,7 +21,7 @@ function prompt_indicators() {
         echo "$ROOT_ICON "
     fi
     if [[ $(jobs -l | wc -l) -gt 0 ]]; then
-        echo "$GEAR_ICON "
+        echo "$GEAR_ICON  "
     fi
 }
 

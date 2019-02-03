@@ -8,6 +8,7 @@ export PATH="/opt/llvm/bin:$PATH"
 export PATH="$PATH:/opt/eclipse_basic/bin/x86_64_linux"
 export PATH=/usr/bin/node:$PATH
 export CATALINA_HOME="/opt/tomcat/"
+export PATH="/usr/local/sbin:$PATH"
 
 CLASSPATH=$CLASSPATH:/usr/share/java/mysql.jar
 export CLASSPATH
@@ -26,5 +27,22 @@ export LB_MEM_NOWARN=1
 export LOGICBLOX_HOME=/home/jimouris/lb-engines/logicblox-3.10.29/logicblox
 export PATH=${LOGICBLOX_HOME}/bin:${PATH}
 
+export PATH="/usr/lib/ccache:$PATH"
+
+export PATH="/opt/aspectj1.8/bin:$PATH"
+export PATH="/home/jimouris/.linuxbrew/bin:$PATH"
+export CLASSPATH="/opt/aspectj1.8/lib/aspectjrt.jar:$CLASSPATH"
+
+# Sharemind
+export PATH="/home/jimouris/repos/Sharemind/build-sdk/prefix/bin:$PATH"
+export LD_LIBRARY_PATH="/home/jimouris/repos/Sharemind/build-sdk/prefix/lib/"
+export SHAREMIND_BIN="/home/jimouris/repos/Sharemind/build-sdk/prefix/bin/"
+
+# MPIR
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+
 # export PATH=$PATH:/opt/intel/composer_xe_2015.0.090/bin/intel64
+
+. /usr/local/bin/virtualenvwrapper.sh
+
 
