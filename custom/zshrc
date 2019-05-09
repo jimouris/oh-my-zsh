@@ -68,8 +68,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Welcome message with random cow from selected
 randomsay() {
-  COWS=(default elephant elephant duck moose turtle)
-  idx=$(($RANDOM % 7))
+  COWS=(default elephant elephant duck moose)
+  idx=$(($RANDOM % 6))
   # echo "Welcome, jimouris" | cowsay -f ${COWS[$idx]} | lolcat
   motivate --no-colors | cowsay -f ${COWS[$idx]} | lolcat
 }
