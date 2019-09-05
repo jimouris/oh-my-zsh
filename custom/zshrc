@@ -73,7 +73,7 @@ randomsay() {
   # echo "Welcome, jimouris" | cowsay -f ${COWS[$idx]} | lolcat
   motivate --no-colors | cowsay -f ${COWS[$idx]} | lolcat
 }
-randomsay
+# randomsay
 
 
 
