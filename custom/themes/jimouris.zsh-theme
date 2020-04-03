@@ -7,13 +7,26 @@ GEAR_ICON="\u2699"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[blue]%})"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
+ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg[yellow]%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[red]%}"
 
 function git_prompt_info() {
     if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
-        echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(parse_git_dirty)$BRANCH_ICON $(current_branch)$ZSH_THEME_GIT_PROMPT_SUFFIX "
+        echo "$ZSH_THEME_GIT_PROMPT_PREFIX$(parse_git_status)$BRANCH_ICON $(current_branch)$ZSH_THEME_GIT_PROMPT_SUFFIX "
     fi
+}
+
+function parse_git_status() {
+    local status_color="$ZSH_THEME_GIT_PROMPT_CLEAN"
+    local staged=$(git status --porcelain 2>/dev/null | grep -e "^[MADRCU]")
+    local unstaged=$(git status --porcelain 2>/dev/null | grep -e "^[MADRCU? ][MADRCU?]")
+    if [[ -n ${staged} ]]; then
+        status_color="$ZSH_THEME_GIT_PROMPT_STAGED"
+    elif [[ -n ${unstaged} ]]; then
+        status_color="$ZSH_THEME_GIT_PROMPT_UNSTAGED"
+    fi
+    echo "$status_color"
 }
 
 function prompt_indicators() {

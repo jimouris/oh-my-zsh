@@ -5,7 +5,7 @@ source $ZSH/custom/aliases.zsh
 source $ZSH/custom/exportedPaths.zsh
 
 ZSH_THEME="jimouris"
-# ZSH_THEME="robbyrussell_custom"
+# ZSH_THEME="common"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
