@@ -1,5 +1,5 @@
 #!/bin/sh
-PROMPT='$(prompt_context)%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
+PROMPT='$(prompt_context)%{$fg[blue]%}%c%{$reset_color%} $(git_prompt_info)%{$fg_bold[yellow]$(prompt_indicators)%}%{$reset_color%}'
 
 BRANCH_ICON="\ue0a0"
 ROOT_ICON="\u26A1"
