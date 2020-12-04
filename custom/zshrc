@@ -74,6 +74,3 @@ randomsay() {
   motivate --no-colors | cowsay -f ${COWS[$idx]} | lolcat
 }
 # randomsay
-
-
-
